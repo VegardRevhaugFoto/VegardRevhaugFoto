@@ -1,0 +1,55 @@
+/* Generell fade-in for alle seksjoner */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animasjon for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bildegalleri hover-effekt */
+.gallery-container img {
+    width: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Glidende overgang for navigasjonslenker */
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #ff6f61;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #d9534f;
+}
+
+/* Kontaktknapp-effekt */
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #d9534f;
+}
